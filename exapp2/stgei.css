@@ -1,0 +1,17 @@
+iframe {
+			position: fixed;
+			float: right;
+			margin-left: 50px;
+			margin-top: 30px;
+		}
+#upthere {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+}
+hr{
+	border:2px solid green;
+	}
+fieldset{
+	border:3px solid green;
+	}

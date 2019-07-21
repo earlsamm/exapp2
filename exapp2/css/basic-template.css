@@ -1,0 +1,48 @@
+.padding-top-10{
+	padding-top: 10px;
+
+}
+@media (max-width: 768px){
+	.input-group{
+	margin-bottom: 5px;
+	}
+}
+.form-control{
+	width: 100%;
+}
+.brand{
+	max-height: 25px;
+}
+.candidates{
+	width:100%;
+	text-align:center;
+}
+hr{
+	border:2px solid green;
+	width:100%;
+}
+h1{
+	color: #ff0000;
+}
+.glyphicon {
+  color: green;
+}
+.panel-heading {
+  color: green;
+}
+body{
+	background-image: url(../image/oke1.jpg);
+	color: purple;
+}
+.submit{
+	
+	color: red;
+}
+h3{
+	color: #ff0000;
+	text-align: left;
+}
+.breadcrumb{
+	align: right;
+}
+

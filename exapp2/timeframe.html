@@ -1,0 +1,378 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<div style="font-weight: bold" id="quiz-time-left"></div>
+
+<script type="text/JavaScript">
+var total_seconds =60*120;
+var c_minutes = parseInt(total_seconds/60);
+var c_seconds = parseInt(total_seconds%60);
+function CheckTime(){
+document.getElementById("quiz-time-left").innerHTML
+ = 'Time Left:' + c_minutes + 'minutes' + c_seconds + 'seconds';
+if(total_seconds <= 0){
+	setTimeout('document.quiz.submit()', 1);
+	}else{
+	total_seconds = total_seconds -1;
+	c_minutes = parseInt(total_seconds/60);
+	c_seconds = parseInt(total_seconds%60);
+	setTimeout("CheckTime()",1000);
+	}}
+setTimeout("CheckTime()",1000);
+</script>
+<link rel="stylesheet" type="text/css href="stgei.css">
+<title> INTRODUCTION TO ICT</title>
+</head>
+<body bgcolor="FF0000" oncontextmenu="return false">
+<h2 align="center"> INSTRUCTIONS</h2>
+1. Attempt all questions<br/>
+2. Expect your result in 
+a text <br/>within 48 hours<br/>
+3. To submit the examination, click the small box below then click on the SUBMIT EXAMINATION NOW button.<br/>
+<hr/>
+:::<b>We give the best you can get</b>:::<hr/>
+
+<h2 align="center">NEWS AND INFORMATION</h2>
+* Do you know that your friends at home and in other tutorial centres can participate in this weekly CBT assessment? Simply ask the administrator for the conditions.<br/>
+* Do you know that by LIKING our facebook page and filling out our data form you can get all the information you need about UNIVERSITIES, POLYTECHNICS, JAMB, WASSCE, ICT TRAINING etc?<br/>
+<hr/>
+:::We give the best you can get:::<hr/>
+<hr/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+ 
+<P ALIGN="CENTER"><IMG SRC="dlhs.png" HEIGHT=150 WIDTH=300"></p>
+
+<form name="quiz" method="post" action="alevel.php">
+<fieldset>
+	<legend align="center"><h3>Student's information</h3></legend>
+<table>
+	<tr>
+		<td> SURNAME : </td><td><input type="text"  required="required" name="name"/> </td>
+	</tr>
+	<tr>
+		<td> CODE : </td><td><input type="text"  required="required" name="ad"/> </td>
+	</tr>
+	<tr>
+		<td> COURSE : </td><td><input type="text"  value="INTRODUCTION TO IT" required name="course"/> </td>
+	</tr>
+</table>
+</fieldset>
+<hr/>
+<fieldset>
+	<legend align="center"><h3>Multiple Choice Questions</h3></legend>
+1.	 The brain of any computer system is <br/>
+<INPUT TYPE="RADIO" NAME="E1" VALUE="0"> (a) ALU<br/>
+<INPUT TYPE="RADIO" NAME="E1" VALUE="0"> (b) Memory<br/>
+<INPUT TYPE="RADIO" NAME="E1" VALUE="1"> (c) CPU<br/>
+<INPUT TYPE="RADIO" NAME="E1" VALUE="0"> (d) Control unit<br/>
+<hr/>
+2.	 The two kinds of main memory are: <br/>
+<INPUT TYPE="RADIO" NAME="E2" VALUE="0"> (a) Primary and secondary<br/>
+<INPUT TYPE="RADIO" NAME="E2" VALUE="0"> (b) Primary and secondary<br/>
+<INPUT TYPE="RADIO" NAME="E2" VALUE="1"> (c) ROM and RAM<br/>
+<INPUT TYPE="RADIO" NAME="E2" VALUE="0"> (d) All of above<br/>
+<hr/>
+3.	Which of the following storage devices can store maximum amount of data?<br/>
+<INPUT TYPE="RADIO" NAME="E3" VALUE="0"> (a) Floppy Disk<br/>
+<INPUT TYPE="RADIO" NAME="E3" VALUE="1"> (b) Hard Disk<br/>
+<INPUT TYPE="RADIO" NAME="E3" VALUE="0"> (c) Compact Disk<br/>
+<INPUT TYPE="RADIO" NAME="E3" VALUE="0"> (d) Magneto Optic Disk<br/>
+<hr/>
+4.	 Regarding a VDU, Which statement is more correct? <br/> 
+<INPUT TYPE="RADIO" NAME="E4" VALUE="0"> (a) It is an output device<br/>
+<INPUT TYPE="RADIO" NAME="E4" VALUE="0"> (b) It is an input device<br/>
+<INPUT TYPE="RADIO" NAME="E4" VALUE="1"> (c) It is a peripheral device<br/>
+<INPUT TYPE="RADIO" NAME="E4" VALUE="0"> (d) It is hardware item<br/>
+<hr/>
+5.	 A modern electronic computer is a machine that is meant for <br/>
+<INPUT TYPE="RADIO" NAME="E5" VALUE="0"> (a) Doing quick mathematical calculations<br/>
+<INPUT TYPE="RADIO" NAME="E5" VALUE="1"> (b) Input, storage, manipulation and outputting of data<br/>
+<INPUT TYPE="RADIO" NAME="E5" VALUE="0"> (c) Electronic data processing<br/>
+<INPUT TYPE="RADIO" NAME="E5" VALUE="0"> (d) Performing repetitive tasks accurately<br/>
+<hr/>
+6.	 A window cannot be<br/>
+<INPUT TYPE="RADIO" NAME="E6" VALUE="0"> (a) sized<br/>
+<INPUT TYPE="RADIO" NAME="E6" VALUE="0"> (b) moved<br/>
+<INPUT TYPE="RADIO" NAME="E6" VALUE="0"> (c) closed<br/>
+<INPUT TYPE="RADIO" NAME="E6" VALUE="1"> (d) none of the above<br/>
+<hr/>
+7.	The personal computer industry was started by <br/>
+<INPUT TYPE="RADIO" NAME="E7" VALUE="0"> (a) Apple<br/>
+<INPUT TYPE="RADIO" NAME="E7" VALUE="0"> (b) Compaq<br/>
+<INPUT TYPE="RADIO" NAME="E7" VALUE="1"> (c) IBM<br/>
+<INPUT TYPE="RADIO" NAME="E7" VALUE="0"> (d) hp<br/>
+<hr/>
+8.	 A temporary holding area for data, application instructions and the operating system is the <br/>
+<INPUT TYPE="RADIO" NAME="E8" VALUE="1"> (a) RAM.<br/>
+<INPUT TYPE="RADIO" NAME="E8" VALUE="0"> (b) ROM.<br/>
+<INPUT TYPE="RADIO" NAME="E8" VALUE="0"> (c) Register.<br/>
+<INPUT TYPE="RADIO" NAME="E8" VALUE="0"> (d) Hard disk.<br/>
+<hr/>
+9.	 Which of the following software will be loaded first to the memory when the computer is switched on?<br/> 
+<INPUT TYPE="RADIO" NAME="E9" VALUE="0"> (a) Spreadsheet<br/>
+<INPUT TYPE="RADIO" NAME="E9" VALUE="0"> (b) Word processor<br/>
+<INPUT TYPE="RADIO" NAME="E9" VALUE="1"> (c) Operating system<br/>
+<INPUT TYPE="RADIO" NAME="E9" VALUE="0"> (d) Web page browser<br/>
+<hr/>
+10.	A computer's primary memory is also known as the <br/>
+<INPUT TYPE="RADIO" NAME="E10" VALUE="0"> (a) Control Unit.<br/>
+<INPUT TYPE="RADIO" NAME="E10" VALUE="0"> (b) Read Only Memory.<br/>
+<INPUT TYPE="RADIO" NAME="E10" VALUE="1"> (c) hard drive.<br/>
+<INPUT TYPE="RADIO" NAME="E10" VALUE="0"> (d) Central Processing Unit.<br/>
+<hr/>
+11.	 Which of the following files is an image? <br/>
+<INPUT TYPE="RADIO" NAME="E11" VALUE="0"> (a) image.doc<br/>
+<INPUT TYPE="RADIO" NAME="E11" VALUE="0"> (b) picture.exe<br/>
+<INPUT TYPE="RADIO" NAME="E11" VALUE="0"> (c) project1.xls<br/>
+<INPUT TYPE="RADIO" NAME="E11" VALUE="1"> (d) rain.jpeg<br/>
+<hr/>
+12.	 Which  of  the  following  strategies  cannot  effectively  prevent  a  computer  from  being infected by viruses? <br/> 
+<INPUT TYPE="RADIO" NAME="E12" VALUE="0"> (a) Use virus scanning program.<br/>
+<INPUT TYPE="RADIO" NAME="E12" VALUE="0"> (b) Refuse to use pirated software.<br/>
+<INPUT TYPE="RADIO" NAME="E12" VALUE="1"> (c) Switch off computers that are not in use.<br/>
+<INPUT TYPE="RADIO" NAME="E12" VALUE="0"> (d) Do not open emails coming from questionable sources.<br/>
+<hr/>
+13.	 The full form of ALU is <br/>
+<INPUT TYPE="RADIO" NAME="E13" VALUE="0"> (a) Array Logic Unit<br/>
+<INPUT TYPE="RADIO" NAME="E13" VALUE="0"> (b) None of above<br/>
+<INPUT TYPE="RADIO" NAME="E13" VALUE="1"> (c) Arithmetic Logic Unit<br/>
+<INPUT TYPE="RADIO" NAME="E13" VALUE="0"> (d) Application Logic Unit<br/>
+<hr/>
+14.	 WAN stands for <br/>
+<INPUT TYPE="RADIO" NAME="E14" VALUE="0"> (a) Wap Area Network<br/>
+<INPUT TYPE="RADIO" NAME="E14" VALUE="1"> (b) Wide Area Network<br/>
+<INPUT TYPE="RADIO" NAME="E14" VALUE="0"> (c) Wide Array Net<br/>
+<INPUT TYPE="RADIO" NAME="E14" VALUE="0"> (d) Wireless Area Network<br/>
+<hr/>
+15. Web cam is an <br/>
+<INPUT TYPE="RADIO" NAME="E15" VALUE="1"> (a) input unit device<br/>
+<INPUT TYPE="RADIO" NAME="E15" VALUE="0"> (b) output unit device<br/>
+<INPUT TYPE="RADIO" NAME="E15" VALUE="0"> (c) processing device<br/>
+<INPUT TYPE="RADIO" NAME="E15" VALUE="0"> (d) Input and Output device<br/>
+<hr/>
+16.	Computer professionals working in a computer centre are <br/>
+<INPUT TYPE="RADIO" NAME="E16" VALUE="0"> (a) Software<br/>
+<INPUT TYPE="RADIO" NAME="E16" VALUE="0"> (b) Firmware<br/>
+<INPUT TYPE="RADIO" NAME="E16" VALUE="0"> (c) Hardware<br/>
+<INPUT TYPE="RADIO" NAME="E16" VALUE="1"> (d) Peopleware<br/>
+<hr/>
+17.What is the full meaning of CRT?<br/>
+<INPUT TYPE="RADIO" NAME="E17" VALUE="0"> (a) Current Ray Technology<br/>
+<INPUT TYPE="RADIO" NAME="E17" VALUE="0"> (b) Cathode ray Technology<br/>
+<INPUT TYPE="RADIO" NAME="E17" VALUE="0"> (c) Current Ray Tube<br/>
+<INPUT TYPE="RADIO" NAME="E17" VALUE="1"> (d) Cathode Ray Tube<br/>
+<hr/>
+18. What is the default file extension created by notepad?<br/>
+<INPUT TYPE="RADIO" NAME="E18" VALUE="0"> (a) .doc<br/>
+<INPUT TYPE="RADIO" NAME="E18" VALUE="0"> (b) .html<br/>
+<INPUT TYPE="RADIO" NAME="E18" VALUE="1"> (c) .txt<br/>
+<INPUT TYPE="RADIO" NAME="E18" VALUE="0"> (d) .png<br/>
+<hr/>
+<!--ADD QUESTIONS ON CAPACITORS ESPECIALLY WORK DONE ON AND BY A CAPACITOR-->
+19.	What is the default file extension created by wordpad?<br/> 
+<INPUT TYPE="RADIO" NAME="E19" VALUE="0"> (a) .ppt<br/>
+<INPUT TYPE="RADIO" NAME="E19" VALUE="0"> (b) .txt<br/>
+<INPUT TYPE="RADIO" NAME="E19" VALUE="1"> (c) .rtf<br/>
+<INPUT TYPE="RADIO" NAME="E19" VALUE="0"> (d) .jpeg<br/>
+<hr/>
+20.	Which of the following is not a video file extension? <br/>
+<INPUT TYPE="RADIO" NAME="E20" VALUE="0"> (a) .avi<br/>
+<INPUT TYPE="RADIO" NAME="E20" VALUE="1"> (b) .wav<br/>
+<INPUT TYPE="RADIO" NAME="E20" VALUE="0"> (c) .mov<br/>
+<INPUT TYPE="RADIO" NAME="E20" VALUE="0"> (d) .mpeg<br/>
+<hr/>
+21.	The ________ button will launch the Start button.<br/>
+<INPUT TYPE="RADIO" NAME="E21" VALUE="0"> (a) esc<br/>
+<INPUT TYPE="RADIO" NAME="E21" VALUE="0"> (b) shift<br/>
+<INPUT TYPE="RADIO" NAME="E21" VALUE="1"> (c) Windows<br/>
+<INPUT TYPE="RADIO" NAME="E21" VALUE="0"> (d) Shortcut<br/>
+<hr/>
+22.	To access properties of an object, the mouse technique to use is ________.<br/>
+<INPUT TYPE="RADIO" NAME="E22" VALUE="0"> (a) dragging<br/>
+<INPUT TYPE="RADIO" NAME="E22" VALUE="0"> (b) dropping<br/>
+<INPUT TYPE="RADIO" NAME="E22" VALUE="0"> (c) left-clicking<br/>
+<INPUT TYPE="RADIO" NAME="E22" VALUE="1"> (d) right-clicking<br/>
+<hr/>
+23.	To move to the beginning of a line of text, press the ________ key. <br/>
+<INPUT TYPE="RADIO" NAME="E23" VALUE="0"> (a) a <br/>
+<INPUT TYPE="RADIO" NAME="E23" VALUE="0"> (b) pageup <br/>
+<INPUT TYPE="RADIO" NAME="E23" VALUE="1"> (c) home <br/>
+<INPUT TYPE="RADIO" NAME="E23" VALUE="0"> (d) enter <br/>
+<hr/>
+24.	Which of these is NOT an operating system? <br/>
+<INPUT TYPE="RADIO" NAME="E24" VALUE="0"> (a) DOS<br/>
+<INPUT TYPE="RADIO" NAME="E24" VALUE="0"> (b) Linux<br/>
+<INPUT TYPE="RADIO" NAME="E24" VALUE="0"> (c) Windows<br/>
+<INPUT TYPE="RADIO" NAME="E24" VALUE="1"> (d) Oracle<br/>
+<hr/>
+25.	You are to choose SLEEP option when <br/>
+<INPUT TYPE="RADIO" NAME="E25" VALUE="0"> (a) the computer is tired after working for the whole day.<br/>
+<INPUT TYPE="RADIO" NAME="E25" VALUE="1"> (b) you are leaving for a very short time want to resume your work shortly.<br/>
+<INPUT TYPE="RADIO" NAME="E25" VALUE="0"> (c) computer gets hanged frequently. Let it sleep for some time.<br/>
+<INPUT TYPE="RADIO" NAME="E25" VALUE="0"> (d) you finish working and going to bed.<br/>
+<hr/>
+26. A ________ is a flash memory storage device that plugins into a USB port.<br/>
+<INPUT TYPE="RADIO" NAME="E26" VALUE="0"> (a) USB snap drive<br/>
+<INPUT TYPE="RADIO" NAME="E26" VALUE="0"> (b) USB memory maker drive<br/>
+<INPUT TYPE="RADIO" NAME="E26" VALUE="0"> (c) Smooth drive<br/>
+<INPUT TYPE="RADIO" NAME="E26" VALUE="1"> (d) USB flash drive<br/>
+<hr/>
+27.	Which is the first program to run on a computer when the computer boots up?.<br/>
+<INPUT TYPE="RADIO" NAME="E27" VALUE="0"> (a) Zuma<br/>
+<INPUT TYPE="RADIO" NAME="E27" VALUE="0"> (b) System software<br/>
+<INPUT TYPE="RADIO" NAME="E27" VALUE="1"> (c) Operating system<br/>
+<INPUT TYPE="RADIO" NAME="E27" VALUE="0"> (d) System operations<br/>
+<hr/>
+28.	________ receives, processes and stores data<br/>
+<INPUT TYPE="RADIO" NAME="E28" VALUE="0"> (a) Information Technology(IT)<br/>
+<INPUT TYPE="RADIO" NAME="E28" VALUE="0"> (b) Information and Communications Technology(ICT)<br/>
+<INPUT TYPE="RADIO" NAME="E28" VALUE="1"> (c) Computer<br/>
+<INPUT TYPE="RADIO" NAME="E28" VALUE="0"> (d) Electronic devices<br/>
+<hr/>
+29.	To join the internet, the computer has to be connected to a<br/>
+<INPUT TYPE="RADIO" NAME="E29" VALUE="0"> (a) internet architecture board<br/>
+<INPUT TYPE="RADIO" NAME="E29" VALUE="0"> (b) internet society<br/>
+<INPUT TYPE="RADIO" NAME="E29" VALUE="1"> (c) internet service provider<br/>
+<INPUT TYPE="RADIO" NAME="E29" VALUE="0"> (d) none of the mentioned<br/>
+<hr/>
+30.	What is internet?<br/>
+<INPUT TYPE="RADIO" NAME="E30" VALUE="0"> (a) a single network<br/>
+<INPUT TYPE="RADIO" NAME="E30" VALUE="1"> (b) a vast collection of different networks<br/>
+<INPUT TYPE="RADIO" NAME="E30" VALUE="0"> (c) interconnection of local area networks<br/>
+<INPUT TYPE="RADIO" NAME="E30" VALUE="0"> (d) none of the mentioned<br/>
+<hr/>
+31.	The objects shown are most likely <br/>
+<p align="center"><img src="ict1.png"> &nbsp;&nbsp;&nbsp; <img src="ict2.png"></p>
+<INPUT TYPE="RADIO" NAME="E31" VALUE="0"> (a) expansion card and keyboard.<br/>
+<INPUT TYPE="RADIO" NAME="E31" VALUE="0"> (b) power supply unit and keyboard.<br/>
+<INPUT TYPE="RADIO" NAME="E31" VALUE="0"> (c) motherboard and keyboard.<br/>
+<INPUT TYPE="RADIO" NAME="E31" VALUE="1"> (d) hard disk drive and keyboard.<br/>
+<hr/>
+32.	Which of these is NOT an output device? <br/>
+<INPUT TYPE="RADIO" NAME="E32" VALUE="0"> (a) Monitor<br/>
+<INPUT TYPE="RADIO" NAME="E32" VALUE="0"> (b) Printer<br/>
+<INPUT TYPE="RADIO" NAME="E32" VALUE="0"> (c) Speaker<br/>
+<INPUT TYPE="RADIO" NAME="E32" VALUE="1"> (d) None of the above<br/>
+<hr/>
+33.	The physical elements of a computer, the machinery or the electronics is referred to as <br/>
+<INPUT TYPE="RADIO" NAME="E33" VALUE="1"> (a) Output<br/>
+<INPUT TYPE="RADIO" NAME="E33" VALUE="0"> (b) computer <br/>
+<INPUT TYPE="RADIO" NAME="E33" VALUE="0"> (c) hardware<br/>
+<INPUT TYPE="RADIO" NAME="E33" VALUE="0"> (d) modem<br/>
+<hr/>
+34.	The major advantage of the LCD monitor over the CRT is that <br/>
+<INPUT TYPE="RADIO" NAME="E34" VALUE="0"> (a) it is more affordable<br/>
+<INPUT TYPE="RADIO" NAME="E34" VALUE="1"> (b) it is thinner and lighter<br/>
+<INPUT TYPE="RADIO" NAME="E34" VALUE="0"> (c) it is outdated<br/>
+<INPUT TYPE="RADIO" NAME="E34" VALUE="0"> (d) it can show still and moving pictures<br/>
+<hr/>
+35.	Memory that lose its content when power is off is <br/>
+<INPUT TYPE="RADIO" NAME="E35" VALUE="1"> (a) volatile<br/>
+<INPUT TYPE="RADIO" NAME="E35" VALUE="0"> (b) static<br/>
+<INPUT TYPE="RADIO" NAME="E35" VALUE="0"> (c) random<br/>
+<INPUT TYPE="RADIO" NAME="E35" VALUE="0"> (d) non volatile<br/>
+<hr/>
+36.	The Central Processing Unit (CPU) consists of<br/>
+<INPUT TYPE="RADIO" NAME="E36" VALUE="0"> (a) control unit<br/>
+<INPUT TYPE="RADIO" NAME="E36" VALUE="0"> (b) arithmetic and logic unit<br/>
+<INPUT TYPE="RADIO" NAME="E36" VALUE="0"> (c) main store<br/>
+<INPUT TYPE="RADIO" NAME="E36" VALUE="1"> (d) all of above<br/>
+<hr/>
+<h4 align="center">Questions 37 to 46 are based on Microsoft Office Package especially Word</h4>
+<hr/>
+37.	Ctrl + X<br/>
+<INPUT TYPE="RADIO" NAME="E37" VALUE="0"> (a) Close Document<br/>
+<INPUT TYPE="RADIO" NAME="E37" VALUE="0"> (b) Close Word Application<br/>
+<INPUT TYPE="RADIO" NAME="E37" VALUE="1"> (c) Cut the Selected Contents<br/>
+<INPUT TYPE="RADIO" NAME="E37" VALUE="0"> (d) Copy the Selected Contents<br/>
+<hr/>
+38.	Which key is used to select all the texts in a document?<br/>
+<INPUT TYPE="RADIO" NAME="E38" VALUE="0"> (a) Ctrl + S<br/>
+<INPUT TYPE="RADIO" NAME="E38" VALUE="0"> (b) Ctrl + P<br/>
+<INPUT TYPE="RADIO" NAME="E38" VALUE="1"> (c) Ctrl + A<br/>
+<INPUT TYPE="RADIO" NAME="E38" VALUE="0"> (d) Ctrl + X<br/>
+<hr/>
+39.	What is the extension of Word files? <br/>
+<INPUT TYPE="RADIO" NAME="E39" VALUE="0"> (a) FIL<br/>
+<INPUT TYPE="RADIO" NAME="E39" VALUE="0"> (b) DOT <br/>
+<INPUT TYPE="RADIO" NAME="E39" VALUE="1"> (c) DOC<br/>
+<INPUT TYPE="RADIO" NAME="E39" VALUE="0"> (d) TXT<br/>
+<hr/>
+40.	 Which of the following operations moves text from clipboard? <br/>
+<INPUT TYPE="RADIO" NAME="E40" VALUE="0"> (a) Copy<br/>
+<INPUT TYPE="RADIO" NAME="E40" VALUE="1"> (b) Paste<br/>
+<INPUT TYPE="RADIO" NAME="E40" VALUE="0"> (c) Drag and Drop<br/>
+<INPUT TYPE="RADIO" NAME="E40" VALUE="0"> (d) Cut<br/>
+<hr/>
+41.	 To select a group of words, ________. <br/>
+<INPUT TYPE="RADIO" NAME="E41" VALUE="0"> (a) click the Group button on the Formatting toolbar<br/>
+<INPUT TYPE="RADIO" NAME="E41" VALUE="0"> (b) double-click anywhere within the group to be selected<br/>
+<INPUT TYPE="RADIO" NAME="E41" VALUE="1"> (c) drag the mouse pointer through the characters to be selected<br/>
+<INPUT TYPE="RADIO" NAME="E41" VALUE="0"> (d) right-click the first and last characters of the group to be selected<br/>
+<hr/>
+42.	When you save a file as a Web page, Word converts the contents of the document into ________. <br/>
+<INPUT TYPE="RADIO" NAME="E42" VALUE="1"> (a) HTML<br/>
+<INPUT TYPE="RADIO" NAME="E42" VALUE="0"> (b) Java<br/>
+<INPUT TYPE="RADIO" NAME="E42" VALUE="0"> (c) Unix<br/>
+<INPUT TYPE="RADIO" NAME="E42" VALUE="0"> (d) Perl<br/>
+<hr/>
+43.	To give your page a background colour,  <br/> 
+<INPUT TYPE="RADIO" NAME="E43" VALUE="0"> (a) Click on Home - page color - select the colour<br/>
+<INPUT TYPE="RADIO" NAME="E43" VALUE="0"> (b) Click on Insert - page color - select the colour<br/>
+<INPUT TYPE="RADIO" NAME="E43" VALUE="0"> (c) Click on PageLayout - page color and select the colour<br/>
+<INPUT TYPE="RADIO" NAME="E43" VALUE="1"> (d) Click on Special Characters - page color and select the colour<br/>
+<hr/>
+44.	WordArt is found by default, in the ________ menu. <br/>
+<INPUT TYPE="RADIO" NAME="E44" VALUE="0"> (a) Home<br/>
+<INPUT TYPE="RADIO" NAME="E44" VALUE="1"> (b) Insert<br/>
+<INPUT TYPE="RADIO" NAME="E44" VALUE="0"> (c) Page Layout<br/>
+<INPUT TYPE="RADIO" NAME="E44" VALUE="0"> (d) Special characters<br/>
+<hr/>
+45.	Ctrl + B <br/>
+<INPUT TYPE="RADIO" NAME="E45" VALUE="0"> (a) Search the selected text<br/>
+<INPUT TYPE="RADIO" NAME="E45" VALUE="0"> (b) Paste the selected text<br/>
+<INPUT TYPE="RADIO" NAME="E45" VALUE="1"> (c) Bold the selected text<br/>
+<INPUT TYPE="RADIO" NAME="E45" VALUE="0"> (d) Open the specified file<br/>
+<hr/>
+46.	How can you make the selected character superscripted ?<br/>
+<INPUT TYPE="RADIO" NAME="E46" VALUE="0"> (a) Ctrl + =<br/>
+<INPUT TYPE="RADIO" NAME="E46" VALUE="0"> (b) Alt + Ctrl + Shift + =<br/>
+<INPUT TYPE="RADIO" NAME="E46" VALUE="1"> (c) Ctrl + Shift +  = <br/>
+<INPUT TYPE="RADIO" NAME="E46" VALUE="0"> (d) None of above?<br/>
+<hr/>
+47.	 The  feature  in  text editor  that  enables  users  to  type  words  continually  without pressing the ENTER key when the cursor reaches end of each line is <br/>
+<INPUT TYPE="RADIO" NAME="E47" VALUE="0"> (a) Find.<br/>
+<INPUT TYPE="RADIO" NAME="E47" VALUE="0"> (b) Replace.<br/>
+<INPUT TYPE="RADIO" NAME="E47" VALUE="0"> (c) Mail-merge.<br/>
+<INPUT TYPE="RADIO" NAME="E47" VALUE="1"> (d) Word-wrap.<br/>
+<hr/>
+48.	CD-ROM stands for <br/> 
+<INPUT TYPE="RADIO" NAME="E48" VALUE="0"> (a) Compactable Read Only Memory<br/>
+<INPUT TYPE="RADIO" NAME="E48" VALUE="0"> (b) Compact Data Read Only Memory<br/>
+<INPUT TYPE="RADIO" NAME="E48" VALUE="0"> (c) Compactable Disk Read Only Memory<br/>
+<INPUT TYPE="RADIO" NAME="E48" VALUE="1"> (d) Compact Disk Read Only Memory<br/>
+<hr/>
+49.	Which of the following is not essential to shut down your computer? <br/>
+<INPUT TYPE="RADIO" NAME="E49" VALUE="1"> (a) Cut off the power supply<br/>
+<INPUT TYPE="RADIO" NAME="E49" VALUE="0"> (b) Switch off the monitor<br/>
+<INPUT TYPE="RADIO" NAME="E49" VALUE="0"> (c) Save all opened files<br/>
+<INPUT TYPE="RADIO" NAME="E49" VALUE="0"> (d) Close all running applications<br/>
+<hr/>
+50.	What is your expected score in this INTRODUCTION TO INFORMATION TECHNOLOGY EXAMINATION out of 100?<br/>
+<INPUT TYPE="RADIO" NAME="E50" VALUE="1"> (a) above 80 <br/>
+<INPUT TYPE="RADIO" NAME="E50" VALUE="1"> (b) between 60 and 79<br/>
+<INPUT TYPE="RADIO" NAME="E50" VALUE="1"> (c) between 50 and 59<br/>
+<INPUT TYPE="RADIO" NAME="E50" VALUE="1"> (d) below 50<br/>
+</fieldset>
+<hr/>
+
+<p align="center"><input type="checkbox" name="confirmation" required/>
+Click the small box if you wish to submit the examination.<br/></p>
+<hr/>	
+<p align="center"><input type="submit" value="Submit Examination Now"></input></p>
+</form>
+
+
+</body>
+</html>
